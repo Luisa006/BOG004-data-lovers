@@ -5,7 +5,7 @@
       }
   
   body {
-    background: #192537;
+    background: #142021;
     text-align: center;
   }
 
@@ -28,7 +28,39 @@
 }
 
 button {
-    display: inline;
+  margin: 50px 5px;
+    position: relative;
+    padding: 10px 25px;
+    display: inline-block;
+    border-top: solid 1px rgba(255,255,255,0.2);
+    border-bottom: solid 1px rgba(255,255,255,0.2);
+    font-family: 'Baloo Chettan 2', Feliz cumpcursive;
+    text-transform: uppercase;
+    color: #b61cca;
+    letter-spacing: 1px;
+    overflow:hidden; 
+    
+}
+.button::before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: #259990;
+  left: 0;
+  transform: translateX(-40px) rotate(45deg);
+  border: solid 3px #194846;
+  box-shadow: 2px -2px 0px #1A5754;
+  transition: all 0.2s ease;
+}
+button:hover{
+  background: linear-gradient(to right, #183F3E, TRANSPARENT);
+}
+
+.button:hover::before{
+  transform: translateX(-20px) rotate(45deg);
+}
+  /*display: inline;
     width:auto;
     padding: 0.8rem;
     border-style:groove;
@@ -65,3 +97,5 @@ button {
       width: 600px;
       border-radius: 15px;
     } }
+
+    background: #192537; body :
