@@ -1,4 +1,4 @@
-import { example } from './data.js';
+//import { example } from './data.js';
 import data from './data/lol/lol.js';
 const todaData = Object.values(data.data); //obtener todos los valores de los subobjetos (objetos que están dentro del objeto)
 const seeAllChampions = () =>{
@@ -13,6 +13,7 @@ const seeAssassinChampions = () =>{
 const seeFighterChampions = () =>{
     let arrayFighter = todaData.filter(champion => champion.tags.includes("Fighter"));
         showData(arrayFighter); 
+        console.log(arrayFighter)
 }
 
 const seeMageChampions = () =>{
@@ -39,10 +40,10 @@ const seeMarkchampions = () =>{
 const showData = (array) => {
     document.getElementById("root").innerHTML="";
     array.forEach((champion) => {
-    let newTitle = document.createElement("h2");
-    let newContent = document.createTextNode(champion.name);
-    newTitle.appendChild(newContent);
-    let currentDiv = document.getElementById("root");
+      let newTitle = document.createElement("h2");
+      let newContent = document.createTextNode(champion.name);
+      newTitle.appendChild(newContent);
+      let currentDiv = document.getElementById("root");
     currentDiv.insertBefore(newTitle, currentDiv.parentNode[0]);
     });
 }
