@@ -1,4 +1,4 @@
-import { example, anotherExample } from '../src/data.js';
+import { example, anotherExample, seeAssassinChampions } from '../src/data.js';
 
 
 describe('example', () => {
@@ -21,3 +21,9 @@ describe('anotherExample', () => {
     expect(anotherExample()).toBe('OMG');
   });
 });
+
+describe('seeAssassinChampions', () =>{
+  it('seeAssassinChampions es un objeto', () =>{
+    expect(typeof seeAssassinChampions).toBe('object');
+  })
+})
