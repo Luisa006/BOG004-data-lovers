@@ -27,6 +27,10 @@
     src: url(Beaufort.ttf);
 }
 
+img{
+  width: 20%;
+}
+
 button {
     /*margin: 50px 5px;
     position: relative;

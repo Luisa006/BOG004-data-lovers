@@ -12,8 +12,7 @@ const seeAssassinChampions = () =>{
 
 const seeFighterChampions = () =>{
     let arrayFighter = todaData.filter(champion => champion.tags.includes("Fighter"));
-        showData(arrayFighter); 
-        console.log(arrayFighter)
+        showData(arrayFighter);
 }
 
 const seeMageChampions = () =>{
@@ -40,13 +39,17 @@ const seeMarkchampions = () =>{
 const showData = (array) => {
     document.getElementById("root").innerHTML="";
     array.forEach((champion) => {
-      let newTitle = document.createElement("h2");
-      let newContent = document.createTextNode(champion.name);
-      newTitle.appendChild(newContent);
-      let currentDiv = document.getElementById("root");
-    currentDiv.insertBefore(newTitle, currentDiv.parentNode[0]);
+        let newTitle = document.createElement("h2");
+        let newContent = document.createTextNode(champion.name);
+        newTitle.appendChild(newContent);
+        let newImg = document.createElement("img");
+        newImg.setAttribute("src", champion.splash);
+        let currentDiv = document.getElementById("root");
+        currentDiv.insertBefore(newImg, currentDiv.parentNode[0]);
+        currentDiv.insertBefore(newTitle, currentDiv.parentNode[0]);
     });
 }
+
 document.querySelector("#allChampions").addEventListener("click", seeAllChampions);
 document.querySelector("#assassinChampions").addEventListener("click", seeAssassinChampions);
 document.querySelector("#fighterChampions").addEventListener("click", seeFighterChampions);
