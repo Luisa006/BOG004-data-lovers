@@ -45,8 +45,14 @@ const showData = (array) => {
         let newImg = document.createElement("img");
         newImg.setAttribute("src", champion.splash);
         let currentDiv = document.getElementById("root");
+        let kk = `
+        <div>
+            <div>${champion.splash}</div>
+            <img src="${champion.splash}"/>
+        </div>`
         currentDiv.insertBefore(newImg, currentDiv.parentNode[0]);
         currentDiv.insertBefore(newTitle, currentDiv.parentNode[0]);
+        currentDiv.insertBefore(kk, currentDiv.parentNode[0]);
     });
 }
 
