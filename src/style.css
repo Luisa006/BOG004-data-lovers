@@ -28,15 +28,15 @@
 }
 
 button {
-  margin: 50px 5px;
+    /*margin: 50px 5px;
     position: relative;
     padding: 10px 25px;
     display: inline-block;
     border-top: solid 1px rgba(255,255,255,0.2);
     border-bottom: solid 1px rgba(255,255,255,0.2);
-    font-family: 'Baloo Chettan 2', Feliz cumpcursive;
+    font-family: "Baloo Chettan 2", "cursive";
     text-transform: uppercase;
-    color: #b61cca;
+    color: #AEEDD7;
     letter-spacing: 1px;
     overflow:hidden; 
     
@@ -59,17 +59,18 @@ button:hover{
 
 .button:hover::before{
   transform: translateX(-20px) rotate(45deg);
-}
-  /*display: inline;
+}*/
+    display: inline;
     width:auto;
     padding: 0.8rem;
     border-style:groove;
     border-radius:11px;
     font-size: 15px;
+    font-family: "Baloo Chettan 2";
     letter-spacing: 2px;
     margin: 0;
-    background: #D3C9DB;
-    color:rgb(20, 18, 18);
+    background: #142021;
+    color:#AEEDD7;
     margin: 50px auto;
     transition: all 150ms ease-in-out;
     
@@ -98,4 +99,4 @@ button:hover{
       border-radius: 15px;
     } }
 
-    background: #192537; body :
+  
