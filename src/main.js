@@ -35,24 +35,22 @@ const seeMarkchampions = () =>{
         showData(arrayMark); 
 }
 
-
 const showData = (array) => {
     document.getElementById("root").innerHTML="";
     array.forEach((champion) => {
-        let newTitle = document.createElement("h2");
-        let newContent = document.createTextNode(champion.name);
-        newTitle.appendChild(newContent);
-        let newImg = document.createElement("img");
-        newImg.setAttribute("src", champion.splash);
+        let target = document.createElement("div");
+        // let newTitle = document.createElement("h2");
+        // let newContent = document.createTextNode(champion.name);
+        // newTitle.appendChild(newContent);
+        // let newImg = document.createElement("img");
+        // newImg.setAttribute("src", champion.splash);
+        // target.appendChild(newTitle);
+        // target.appendChild(newImg);
         let currentDiv = document.getElementById("root");
-        let kk = `
-        <div>
-            <div>${champion.splash}</div>
-            <img src="${champion.splash}"/>
-        </div>`
-        currentDiv.insertBefore(newImg, currentDiv.parentNode[0]);
-        currentDiv.insertBefore(newTitle, currentDiv.parentNode[0]);
-        currentDiv.insertBefore(kk, currentDiv.parentNode[0]);
+        target.innerHTML=`
+            <h2>${champion.name}</h2>
+            <img src="${champion.splash}"/>`;
+        currentDiv.insertBefore(target, currentDiv.parentNode[0]);
     });
 }
 
