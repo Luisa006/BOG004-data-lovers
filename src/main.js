@@ -1,63 +1,37 @@
-//import { example } from './data.js';
 import data from './data/lol/lol.js';
-const todaData = Object.values(data.data); //obtener todos los valores de los subobjetos (objetos que están dentro del objeto)
-const seeAllChampions = () =>{
-    showData(todaData);
-}
-
-const seeAssassinChampions = () =>{
-    let arrayAssassin = todaData.filter(champion => champion.tags.includes("Assassin"));
-        showData(arrayAssassin); 
-}
-
-const seeFighterChampions = () =>{
-    let arrayFighter = todaData.filter(champion => champion.tags.includes("Fighter"));
-        showData(arrayFighter);
-}
-
-const seeMageChampions = () =>{
-    let arrayMage = todaData.filter(champion => champion.tags.includes("Mage"));
-        showData(arrayMage); 
-}
-
-const seeSupChampions = () =>{
-    let arraySup = todaData.filter(champion => champion.tags.includes("Support"));
-        showData(arraySup); 
-}
-
-const seeTankchampions = () =>{
-    let arrayTanks = todaData.filter(champion => champion.tags.includes("Tank"));
-        showData(arrayTanks); 
-}
-
-const seeMarkchampions = () =>{
-    let arrayMark = todaData.filter(champion => champion.tags.includes("Marksman"));
-        showData(arrayMark); 
-}
-
+import { seeAssassinChampions, seeFighterChampions, seeMageChampions, seeSupChampions, seeTankchampions, seeMarkchampions } from './data.js';
+const todaData = Object.values(data.data);
+console.log(todaData);
 const showData = (array) => {
-    document.getElementById("root").innerHTML="";
+    document.getElementById("root").innerHTML = "";
     array.forEach((champion) => {
         let target = document.createElement("div");
-        // let newTitle = document.createElement("h2");
-        // let newContent = document.createTextNode(champion.name);
-        // newTitle.appendChild(newContent);
-        // let newImg = document.createElement("img");
-        // newImg.setAttribute("src", champion.splash);
-        // target.appendChild(newTitle);
-        // target.appendChild(newImg);
         let currentDiv = document.getElementById("root");
-        target.innerHTML=`
+        target.innerHTML = `
             <h2>${champion.name}</h2>
             <img src="${champion.splash}"/>`;
         currentDiv.insertBefore(target, currentDiv.parentNode[0]);
     });
 }
-
-document.querySelector("#allChampions").addEventListener("click", seeAllChampions);
-document.querySelector("#assassinChampions").addEventListener("click", seeAssassinChampions);
-document.querySelector("#fighterChampions").addEventListener("click", seeFighterChampions);
-document.querySelector("#mageChampions").addEventListener("click", seeMageChampions);
-document.querySelector("#supChampions").addEventListener("click", seeSupChampions);
-document.querySelector("#tankChampions").addEventListener("click", seeTankchampions);
-document.querySelector("#marksmanChampions").addEventListener("click", seeMarkchampions);
+showData(todaData);
+document.querySelector("#allChampions").addEventListener("click", () => {
+    showData(todaData);
+});
+document.querySelector("#assassinChampions").addEventListener("click", () => {
+    showData(seeAssassinChampions(todaData));
+});
+document.querySelector("#fighterChampions").addEventListener("click", () => {
+    showData(seeFighterChampions(todaData));
+});
+document.querySelector("#mageChampions").addEventListener("click", () => {
+    showData(seeMageChampions(todaData));
+});
+document.querySelector("#supChampions").addEventListener("click", () => {
+    showData(seeSupChampions(todaData));
+});
+document.querySelector("#tankChampions").addEventListener("click", () => {
+    showData(seeTankchampions(todaData));
+});
+document.querySelector("#marksmanChampions").addEventListener("click", () => {
+    showData(seeMarkchampions(todaData));
+});
