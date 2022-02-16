@@ -7,6 +7,7 @@ const showData = (array) => {
     array.forEach((champion) => {
         let target = document.createElement("div");
         let currentDiv = document.getElementById("root");
+        target.classList.add("targetChampion");
         target.innerHTML = `
             <h2>${champion.name}</h2>
             <img src="${champion.splash}"/>`;

@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
       }
-  
+
   body {
     background: #142021;
     text-align: center;
@@ -95,12 +95,27 @@ button:hover{
   #h2{
     width: 600px;
     border-radius: 15px;
-  } }
-
-  @media screen and (max-width: 600px) {
-    #h2{
-      width: 600px;
-      border-radius: 15px;
-    } }
-
-  
+  }
+}
+@media screen and (max-width: 600px) {
+  #h2{
+    width: 600px;
+    border-radius: 15px;
+  }
+}
+#root{
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+.targetChampion{
+  width: 25%;
+  float: left;
+  padding: 10px;
+  /* margin: 10px; */
+  /* border: 1px solid white; */
+  /*background-color: wheat;+7*/
+}
+.targetChampion img{
+  width: 100%;
+}
