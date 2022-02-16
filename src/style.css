@@ -3,23 +3,32 @@
     padding: 0;
     box-sizing: border-box;
       }
-
+  
   body {
-    background: #142021;
+    /*background: #080E18;*/
+    background: radial-gradient(#080E18, #0e2433, #080E18);
     text-align: center;
   }
 
-  h1{
+  p{
     font-family: "beaufortforlol";
     color: #C4C4C4;
+    font-size: 35px;
 }
- p{
+ h1{
     font-family: "beaufortforlol";
-    color: #C4C4C4;   
+    color: #C4C4C4;  
+    font-size: 20px;
+
 }
   h2 {
     font-family: "beaufortforlol";
-    color:rgb(184, 162, 37)
+    font-size: 30px;  
+    background: -webkit-linear-gradient(rgb(54, 171, 179), #C4C4C4);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    
     }
 
 @font-face {
@@ -27,54 +36,36 @@
     src: url(Beaufort.ttf);
 }
 
-img{
-  width: 20%;
+ #logoImg{
+  
+  width: 30%; 
+  height: auto;
+  
 }
 
 button {
-    /*margin: 50px 5px;
-    position: relative;
-    padding: 10px 25px;
+  
     display: inline-block;
-    border-top: solid 1px rgba(255,255,255,0.2);
-    border-bottom: solid 1px rgba(255,255,255,0.2);
-    font-family: "Baloo Chettan 2", "cursive";
-    text-transform: uppercase;
-    color: #AEEDD7;
-    letter-spacing: 1px;
-    overflow:hidden; 
-    
-}
-.button::before{
-  content: "";
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  background: #259990;
-  left: 0;
-  transform: translateX(-40px) rotate(45deg);
-  border: solid 3px #194846;
-  box-shadow: 2px -2px 0px #1A5754;
-  transition: all 0.2s ease;
-}
-button:hover{
-  background: linear-gradient(to right, #183F3E, TRANSPARENT);
-}
-
-.button:hover::before{
-  transform: translateX(-20px) rotate(45deg);
-}*/
-    display: inline;
-    width:auto;
+    width: 150px;
     padding: 0.8rem;
-    border-style:groove;
-    border-radius:11px;
+    /*border-style:groove;*/
+    border: none;
+    border-top: solid 2px rgba(49, 228, 241, 0.466);
+    border-bottom: solid 2px rgba(49, 228, 241, 0.466);
+       /* border-radius:11px;*/
     font-size: 15px;
-    font-family: "Baloo Chettan 2";
+    font-family: "Baloo Chettan 2",;
+    font-weight: 500;
     letter-spacing: 2px;
     margin: 0;
-    background: #142021;
-    color:#AEEDD7;
+    /*background: #080E18;*/
+    background: transparent;
+    color:#aee6ed;
+
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  
     margin: 50px auto;
     transition: all 150ms ease-in-out;
     
@@ -82,10 +73,10 @@ button:hover{
   button:hover {
     box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
     background-color: rgb(109, 217, 236) ;
+    color:#142021;
   }
 
-  
-  
+    
 
 @media screen and (max-width: 1024px) {
 
@@ -95,27 +86,40 @@ button:hover{
   #h2{
     width: 600px;
     border-radius: 15px;
-  }
-}
-@media screen and (max-width: 600px) {
-  #h2{
-    width: 600px;
-    border-radius: 15px;
-  }
-}
-#root{
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-}
-.targetChampion{
-  width: 25%;
-  float: left;
-  padding: 10px;
-  /* margin: 10px; */
-  /* border: 1px solid white; */
-  /*background-color: wheat;+7*/
-}
-.targetChampion img{
-  width: 100%;
-}
+  } }
+
+  @media screen and (max-width: 600px) {
+    #h2{
+      width: 600px;
+      border-radius: 15px;
+    } }
+
+    #root{
+      margin: auto;
+      width: 80%;
+      padding: 10px;
+      text-align: center;
+    }
+    .targetChampion{
+      width: 25%;    
+      float: left;
+      padding: 10px;
+
+      
+    }
+    .targetChampion img{
+      width: 100%;
+      border-style: inset;
+     border-color: rgba(49, 228, 241, 0.466);
+     -webkit-border-radius: 28;
+   -moz-border-radius: 28;
+   border-radius: 28px;
+       }
+     .targetChampion img:hover {
+
+       box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+       background-color: rgb(109, 217, 236) ;
+       color:#142021;
+      }
+
+  
