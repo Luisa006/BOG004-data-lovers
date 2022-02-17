@@ -1,6 +1,8 @@
 import data from './data/lol/lol.js';
-import { seeAssassinChampions, seeFighterChampions, seeMageChampions, seeSupChampions, seeTankchampions, seeMarkchampions } from './data.js';
+import { seeAssassinChampions, seeFighterChampions, seeMageChampions, seeSupChampions, seeTankchampions, seeMarkchampions, orderDifficulty,  } from './data.js';
 const todaData = Object.values(data.data);
+const nameData = Object.keys(data.data); //array con los nombres
+console.log (nameData);
 console.log(todaData);
 const showData = (array) => {
     document.getElementById("root").innerHTML = "";
@@ -10,7 +12,8 @@ const showData = (array) => {
         target.classList.add("targetChampion");
         target.innerHTML = `
             <h2>${champion.name}</h2>
-            <img src="${champion.splash}"/>`;
+            <img src="${champion.splash}"/>
+            <p>dificultad: ${champion.info.difficulty}</p>`;
         currentDiv.insertBefore(target, currentDiv.parentNode[0]);
     });
 }
@@ -32,7 +35,18 @@ document.querySelector("#supChampions").addEventListener("click", () => {
 });
 document.querySelector("#tankChampions").addEventListener("click", () => {
     showData(seeTankchampions(todaData));
+    // document.getElementsByClassName("boton").innerHTML = "";
+    // tankChampions.style.backgroundColor="#00aae4";
 });
 document.querySelector("#marksmanChampions").addEventListener("click", () => {
     showData(seeMarkchampions(todaData));
+    // document.getElementsByClassName("boton").innerHTML = "";
+    // marksmanChampions.style.backgroundColor="#00aae4";
+});
+document.querySelector("#orderDif").addEventListener("click", () => {
+    showData(orderDifficulty(todaData));
+});
+
+document.querySelector("#orderName").addEventListener("click", () => {
+    showData(orderName(todaData));
 });

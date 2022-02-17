@@ -86,40 +86,35 @@ button {
   #h2{
     width: 600px;
     border-radius: 15px;
-  } }
-
-  @media screen and (max-width: 600px) {
-    #h2{
-      width: 600px;
-      border-radius: 15px;
-    } }
-
-    #root{
-      margin: auto;
-      width: 80%;
-      padding: 10px;
-      text-align: center;
-    }
-    .targetChampion{
-      width: 25%;    
-      float: left;
-      padding: 10px;
-
-      
-    }
-    .targetChampion img{
-      width: 100%;
-      border-style: inset;
-     border-color: rgba(49, 228, 241, 0.466);
-     -webkit-border-radius: 28;
-   -moz-border-radius: 28;
-   border-radius: 28px;
-       }
-     .targetChampion img:hover {
-
-       box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-       background-color: rgb(109, 217, 236) ;
-       color:#142021;
-      }
-
-  
+  }
+}
+@media screen and (max-width: 600px) {
+  #h2{
+    width: 600px;
+    border-radius: 15px;
+  }
+}
+#root{
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+.targetChampion{
+  width: 25%;    
+  float: left;
+  padding: 10px;  
+}
+.targetChampion img{
+  width: 100%;
+  border-style: inset;
+  border-color: rgba(49, 228, 241, 0.466);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+}
+.targetChampion img:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  background-color: rgb(109, 217, 236) ;
+  color:#142021;
+}

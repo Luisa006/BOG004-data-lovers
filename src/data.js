@@ -11,6 +11,7 @@ export const seeFighterChampions = (todaData) => {
 };
 export const seeMageChampions = (todaData) => {
   let arrayMage = todaData.filter(champion => champion.tags.includes("Mage"));
+
   return arrayMage
 };
 export const seeSupChampions = (todaData) => {
@@ -25,3 +26,26 @@ export const seeMarkchampions = (todaData) => {
   let arrayMarksman = todaData.filter(champion => champion.tags.includes("Marksman"));
   return arrayMarksman
 };
+
+export const orderDifficulty = (todaData) =>{
+  let sortData = todaData.sort( (a,b) =>{
+      if (a.info.difficulty > b.info.difficulty){
+          return 1;
+      }
+      if (a.info.difficulty < b.info.difficulty){
+          return -1;
+      }
+  })
+  return sortData;
+}
+export const orderName = (todaData) =>{
+  let sortData = todaData.sort( (a,b) =>{
+      if (a.name > b.name){
+          return 1;
+      }
+      if (a.name < b.name){
+          return -1;
+      }
+  })
+  return sortData;
+}
