@@ -19,68 +19,67 @@ const showData = (array) => {
 }
 showData(todaData);
 const activeButton = (button) => {
-    allChampions.style.backgroundColor = "transparent";
-    assassinChampions.style.backgroundColor = "transparent";
-    fighterChampions.style.backgroundColor = "transparent";
-    mageChampions.style.backgroundColor = "transparent";
-    supChampions.style.backgroundColor = "transparent";
-    tankChampions.style.backgroundColor = "transparent";
-    marksmanChampions.style.backgroundColor = "transparent";
-    button.style.backgroundColor = "#00aae4";
+    document.getElementById("allChampions").style.backgroundColor = "transparent";
+    document.getElementById("assassinChampions").style.backgroundColor = "transparent";
+    document.getElementById("fighterChampions").style.backgroundColor = "transparent";
+    document.getElementById("mageChampions").style.backgroundColor = "transparent";
+    document.getElementById("supChampions").style.backgroundColor = "transparent";
+    document.getElementById("tankChampions").style.backgroundColor = "transparent";
+    document.getElementById("marksmanChampions").style.backgroundColor = "transparent";
+    document.getElementById(button).style.backgroundColor = "#00aae4";
 }
 const orderButtons = (button) => {
-    orderDif.style.backgroundColor = "transparent";
-    orderNamebtn.style.backgroundColor = "transparent";
-    allChampions.style.backgroundColor = "#00aae4";
-    assassinChampions.style.backgroundColor = "transparent";
-    fighterChampions.style.backgroundColor = "transparent";
-    mageChampions.style.backgroundColor = "transparent";
-    supChampions.style.backgroundColor = "transparent";
-    tankChampions.style.backgroundColor = "transparent";
-    marksmanChampions.style.backgroundColor = "transparent";
-    button.style.backgroundColor = "#00aae4";
-
+    document.getElementById("orderDif").style.backgroundColor = "transparent";
+    document.getElementById("orderNamebtn").style.backgroundColor = "transparent";
+    document.getElementById("allChampions").style.backgroundColor = "#00aae4";
+    document.getElementById("assassinChampions").style.backgroundColor = "transparent";
+    document.getElementById("fighterChampions").style.backgroundColor = "transparent";
+    document.getElementById("mageChampions").style.backgroundColor = "transparent";
+    document.getElementById("supChampions").style.backgroundColor = "transparent";
+    document.getElementById("tankChampions").style.backgroundColor = "transparent";
+    document.getElementById("marksmanChampions").style.backgroundColor = "transparent";
+    document.getElementById(button).style.backgroundColor = "#00aae4";
 }
 
 document.querySelector("#allChampions").addEventListener("click", () => {
     showData(todaData);
-    activeButton(allChampions);
+    activeButton("allChampions");
 });
 document.querySelector("#assassinChampions").addEventListener("click", () => {
     showData(seeAssassinChampions(todaData));
-    activeButton(assassinChampions);
+    activeButton("assassinChampions");
 });
 document.querySelector("#fighterChampions").addEventListener("click", () => {
     showData(seeFighterChampions(todaData));
-    activeButton(fighterChampions);
+    activeButton("fighterChampions");
 });
 
 document.querySelector("#mageChampions").addEventListener("click", () => {
     showData(seeMageChampions(todaData));
-    activeButton(mageChampions);
+    activeButton("mageChampions");
 });
 
 document.querySelector("#supChampions").addEventListener("click", () => {
     showData(seeSupChampions(todaData));
-    activeButton(supChampions);
+    activeButton("supChampions");
 });
 
 document.querySelector("#tankChampions").addEventListener("click", () => {
     showData(seeTankchampions(todaData));
-    activeButton(tankChampions);
+    activeButton("tankChampions");
 });
 
 document.querySelector("#marksmanChampions").addEventListener("click", () => {
     showData(seeMarkchampions(todaData));
-    activeButton(marksmanChampions);
+    activeButton("marksmanChampions");
 });
 document.querySelector("#orderDif").addEventListener("click", () => {
     showData(orderDifficulty(todaData));
-    orderButtons(orderDif);
+    orderButtons("orderDif");
 });
 
 document.querySelector("#orderNamebtn").addEventListener("click", () => {
     showData(orderName(todaData));
-    orderButtons(orderNamebtn);
+    orderButtons("orderNamebtn");
 
 });

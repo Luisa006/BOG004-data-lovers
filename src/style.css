@@ -1,109 +1,81 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-      }
-  
-  body {
-    /*background: #080E18;*/
-    background: radial-gradient(#080E18, #0e2433, #080E18);
-    text-align: center;
-  }
-
-  p{
-    font-family: "beaufortforlol";
-    color: #C4C4C4;
-    font-size: 35px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
- h1{
-    font-family: "beaufortforlol";
-    color: #C4C4C4;  
-    font-size: 20px;
-
+body {
+  background: radial-gradient(#080E18, #0e2433, #080E18);
+  text-align: center;
 }
-  h2 {
-    font-family: "beaufortforlol";
-    font-size: 30px;  
-    background: -webkit-linear-gradient(rgb(54, 171, 179), #C4C4C4);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;       
-    }
-
-.orderButton, .orderChamps {
+@font-face {
+  font-family:"beaufortforlol";
+  src: url(Beaufort.ttf);
+}
+p{
+  font-family: "beaufortforlol";
+  color: #C4C4C4;
+  font-size: 35px;
+}
+h1{
+  font-family: "beaufortforlol";
+  color: #C4C4C4;  
+  font-size: 20px;
+}
+h2 {
+  font-family: "beaufortforlol";
+  font-size: 30px;  
+  background: -webkit-linear-gradient(rgb(54, 171, 179), #C4C4C4);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;       
+}
+#orderButton, #orderChamps {
   height: 100px;
 }
-.orderChamps{
+#orderChamps{
   margin-bottom: 50px;
 }
-
-@font-face {
-    font-family:"beaufortforlol";
-    src: url(Beaufort.ttf);
-}
-
- #logoImg{
-  
+/* #tittle{
+  width: 70%;
+  margin: auto;
+} */
+/* .orderButton{
+  width: 30%;
+  display: inline;
+  float: right;
+} */
+#logoImg{
   width: 30%; 
   height: auto;
-  
 }
-
 button {
-  
-    display: inline-block;
-    width: 150px; 
-    padding: 0.8rem; 
-    /*border-style:groove;*/
-    border: none;
-    border-top: solid 2px rgba(49, 228, 241, 0.466);
-    border-bottom: solid 2px rgba(49, 228, 241, 0.466);
-       /* border-radius:11px;*/
-    font-size: 15px;
-    font-family: "Baloo Chettan 2",;
-    font-weight: 500;
-    letter-spacing: 2px;
-    margin: 0;
-    /*background: #080E18;*/
-    background: transparent;
-    color:#aee6ed;
-
+  display: inline-block;
+  width: 150px; 
+  padding: 0.8rem; 
+  border: none;
+  border-top: solid 2px rgba(49, 228, 241, 0.466);
+  border-bottom: solid 2px rgba(49, 228, 241, 0.466);
+  font-size: 15px;
+  font-family: "Baloo Chettan 2",;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+  background: transparent;
+  color:#aee6ed;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
-  
-    margin: 50px auto;
-    transition: all 150ms ease-in-out;
-    
-  }
-  button:hover {
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-    background-color: rgb(109, 217, 236) ;
-    color:#142021;
-  }
-
-   .active {
-
-    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-    background-color: rgb(109, 217, 236) ;
-    color:#142021;
-
-  }
-
-@media screen and (max-width: 1024px) {
-
+  margin: 50px auto;
+  transition: all 150ms ease-in-out;
 }
-
-@media screen and (max-width: 767px) {
-  #h2{
-    width: 600px;
-    border-radius: 15px;
-  }
+button:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  background-color: rgb(109, 217, 236) ;
+  color:#142021;
 }
-@media screen and (max-width: 600px) {
-  #h2{
-    width: 600px;
-    border-radius: 15px;
-  }
+.active {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  background-color: rgb(109, 217, 236) ;
+  color:#142021;
 }
 #root{
   margin: auto;
@@ -128,4 +100,19 @@ button {
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   background-color: rgb(109, 217, 236) ;
   color:#142021;
+}
+
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 767px) {
+  h2{
+    width: 600px;
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h2{
+    width: 600px;
+    border-radius: 15px;
+  }
 }
