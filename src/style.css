@@ -26,10 +26,15 @@
     font-size: 30px;  
     background: -webkit-linear-gradient(rgb(54, 171, 179), #C4C4C4);
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-
-    
+    -webkit-background-clip: text;       
     }
+
+.orderButton, .orderChamps {
+  height: 100px;
+}
+.orderChamps{
+  margin-bottom: 50px;
+}
 
 @font-face {
     font-family:"beaufortforlol";
@@ -46,8 +51,8 @@
 button {
   
     display: inline-block;
-    width: 150px;
-    padding: 0.8rem;
+    width: 150px; 
+    padding: 0.8rem; 
     /*border-style:groove;*/
     border: none;
     border-top: solid 2px rgba(49, 228, 241, 0.466);
@@ -76,7 +81,13 @@ button {
     color:#142021;
   }
 
-    
+   .active {
+
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+    background-color: rgb(109, 217, 236) ;
+    color:#142021;
+
+  }
 
 @media screen and (max-width: 1024px) {
 
@@ -97,7 +108,7 @@ button {
 #root{
   margin: auto;
   width: 80%;
-  padding: 10px;
+  padding: 10px; 
   text-align: center;
 }
 .targetChampion{
