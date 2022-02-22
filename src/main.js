@@ -12,8 +12,9 @@ const showData = (array) => {
         target.classList.add("targetChampion");
         target.innerHTML = `
             <h2>${champion.name}</h2>
-            <img src="${champion.splash}"/>
-            <p>dificultad: ${champion.info.difficulty}</p>`;
+            <img class="championImg" src="${champion.splash}"/>
+            <img class="skullImg" src="esqueleto.png">
+            <p> dificultad: ${champion.info.difficulty}</p>`;
         currentDiv.insertBefore(target, currentDiv.parentNode[0]);
     });
 }

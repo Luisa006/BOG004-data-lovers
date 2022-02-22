@@ -46,6 +46,7 @@ export const orderName = (todaData) =>{
       if (a.name < b.name){
           return -1;
       }
+      return 0
   })
   return sortData;
 }

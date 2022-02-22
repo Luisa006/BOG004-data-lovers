@@ -11,22 +11,32 @@ body {
   font-family:"beaufortforlol";
   src: url(Beaufort.ttf);
 }
-p{
-  font-family: "beaufortforlol";
-  color: #C4C4C4;
-  font-size: 35px;
+@font-face {
+  font-family:"Baloo Chettan 2";
+  src: url(BalooChettan2.ttf);
 }
 h1{
   font-family: "beaufortforlol";
   color: #C4C4C4;  
   font-size: 20px;
 }
-h2 {
+p{
+  font-family: "Baloo Chettan 2" !important;
+  color: #C4C4C4;  
+  font-size: 20px;
+  font-weight: 600;
+}
+h2{
   font-family: "beaufortforlol";
   font-size: 30px;  
   background: -webkit-linear-gradient(rgb(54, 171, 179), #C4C4C4);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;       
+}
+#tittleChampion{
+  font-family: "beaufortforlol";
+  color: #C4C4C4;
+  font-size: 35px;
 }
 #orderButton, #orderChamps {
   height: 100px;
@@ -34,15 +44,9 @@ h2 {
 #orderChamps{
   margin-bottom: 50px;
 }
-/* #tittle{
-  width: 70%;
-  margin: auto;
-} */
-/* .orderButton{
-  width: 30%;
-  display: inline;
-  float: right;
-} */
+.skullImg{
+  width: 25px !important;
+}
 #logoImg{
   width: 30%; 
   height: auto;
@@ -88,7 +92,7 @@ button:hover {
   float: left;
   padding: 10px;  
 }
-.targetChampion img{
+.targetChampion .championImg{
   width: 100%;
   border-style: inset;
   border-color: rgba(49, 228, 241, 0.466);
@@ -96,7 +100,7 @@ button:hover {
   -moz-border-radius: 28;
   border-radius: 28px;
 }
-.targetChampion img:hover {
+.targetChampion .championImg:hover {
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   background-color: rgb(109, 217, 236) ;
   color:#142021;
