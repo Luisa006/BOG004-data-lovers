@@ -1,6 +1,8 @@
 // export const example = () => {
 //   return 'example';
 // };
+import data from './data/lol/lol.js';
+
 export const seeAssassinChampions = (todaData) => {
   let arrayAssassin = todaData.filter(champion => champion.tags.includes("Assassin"));
   return arrayAssassin
@@ -26,6 +28,14 @@ export const seeMarkchampions = (todaData) => {
   let arrayMarksman = todaData.filter(champion => champion.tags.includes("Marksman"));
   return arrayMarksman
 };
+
+const dataChamps = Object.values(data.data);
+export const percentage = (totalC) => {
+  let calculate = totalC.length;
+  let total = Math.floor((calculate * 100) / dataChamps.length);
+  console.log(total);
+  return total
+}
 
 export const orderDifficulty = (todaData) =>{
   let sortData = todaData.sort( (a,b) =>{
