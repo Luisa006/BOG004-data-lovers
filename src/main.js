@@ -39,7 +39,7 @@ const orderButtons = (button) => {
     document.getElementById("supChampions").style.backgroundColor = "transparent";
     document.getElementById("tankChampions").style.backgroundColor = "transparent";
     document.getElementById("marksmanChampions").style.backgroundColor = "transparent";
-    document.getElementById(button).style.backgroundColor = "#00aae4";
+    document.getElementById(button).style.backgroundColor = "#967539";
 }
 
 document.querySelector("#allChampions").addEventListener("click", () => {

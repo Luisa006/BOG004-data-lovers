@@ -40,10 +40,18 @@ h2{
 }
 #orderButton, #orderChamps {
   height: 100px;
-}
+  }
+
+  #orderButton{
+    position: absolute;
+    right: 70px;
+    top: 200px;
+  }
+  
 #orderChamps{
-  margin-bottom: 50px;
+  margin-bottom: 50px;  
 }
+
 .skullImg{
   width: 25px !important;
 }
@@ -79,7 +87,7 @@ button:hover {
 .active {
   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
   background-color: rgb(109, 217, 236) ;
-  color:#142021;
+  color:#142021; 
 }
 #root{
   margin: auto;
@@ -106,6 +114,36 @@ button:hover {
   color:#142021;
 }
 
+#orderDif{
+ 
+width: 200px;
+font-size: 16px;
+font-family: "Baloo Chettan 2",;
+border-radius: 0 50% 0 50% ;
+border-top: solid 2px rgb(193 161 89 / 71%);
+border-bottom: solid 2px rgb(167 137 68);
+}
+#orderDif:hover {
+  box-shadow: 0 0 10px 0 #c6a75d inset, 0 0 10px 4px #c1a159;
+  background: linear-gradient(to right, #C6A75D, #967539, #C6A75D);
+}
+
+#orderNamebtn{
+ 
+  width: 200px;
+  font-size: 16px;
+  font-family: "Baloo Chettan 2",;
+  border-radius: 50% 0 50% 0;
+  border-top: solid 2px rgb(193 161 89 / 71%);
+  border-bottom: solid 2px rgb(167 137 68);
+
+  }
+  #orderNamebtn:hover {
+    box-shadow: 0 0 10px 0 #c6a75d inset, 0 0 10px 4px #c1a159;
+    background: linear-gradient(to right, #C6A75D, #967539, #C6A75D);
+    
+  }
+
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 767px) {
@@ -118,5 +156,7 @@ button:hover {
   h2{
     width: 600px;
     border-radius: 15px;
+
   }
 }
+
