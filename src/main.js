@@ -1,5 +1,5 @@
 import data from './data/lol/lol.js';
-import { seeAssassinChampions, seeFighterChampions, seeMageChampions, seeSupChampions, seeTankchampions, seeMarkchampions, orderDifficulty, orderName } from './data.js';
+import { seeAssassinChampions, seeFighterChampions, seeMageChampions, seeSupChampions, seeTankchampions, seeMarkchampions, orderDifficulty, orderName, percentage, } from './data.js';
 const todaData = Object.values(data.data);
 const nameData = Object.keys(data.data); //array con los nombres
 console.log(nameData);
@@ -50,30 +50,49 @@ document.querySelector("#allChampions").addEventListener("click", () => {
 document.querySelector("#assassinChampions").addEventListener("click", () => {
     showData(seeAssassinChampions(todaData));
     activeButton("assassinChampions");
+    let totalChamps = seeAssassinChampions(todaData);
+    percentage(totalChamps);
 });
 document.querySelector("#fighterChampions").addEventListener("click", () => {
     showData(seeFighterChampions(todaData));
     activeButton("fighterChampions");
+    let totalChamps = seeFighterChampions(todaData);
+    percentage(totalChamps);
 });
 
 document.querySelector("#mageChampions").addEventListener("click", () => {
     showData(seeMageChampions(todaData));
     activeButton("mageChampions");
+    let totalChamps = seeMageChampions(todaData);
+    percentage(totalChamps);
 });
 
 document.querySelector("#supChampions").addEventListener("click", () => {
     showData(seeSupChampions(todaData));
     activeButton("supChampions");
+    let totalChamps = seeSupChampions(todaData);
+    percentage(totalChamps);
 });
 
 document.querySelector("#tankChampions").addEventListener("click", () => {
     showData(seeTankchampions(todaData));
     activeButton("tankChampions");
+    let totalChamps = seeTankchampions(todaData);
+    percentage(totalChamps);
 });
 
 document.querySelector("#marksmanChampions").addEventListener("click", () => {
     showData(seeMarkchampions(todaData));
     activeButton("marksmanChampions");
+    let totalChamps = seeMarkchampions(todaData);
+    percentage(totalChamps);
+    
+    
+
+    
+
+    /*return totalChamps.length*/
+
 });
 document.querySelector("#orderDif").addEventListener("click", () => {
     showData(orderDifficulty(todaData));
