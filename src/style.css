@@ -31,7 +31,8 @@ h2{
   font-size: 30px;  
   background: -webkit-linear-gradient(rgb(54, 171, 179), #C4C4C4);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;       
+  -webkit-background-clip: text;    
+  padding-bottom: 5px;   
 }
 #tittleChampion{
   font-family: "beaufortforlol";
@@ -44,14 +45,27 @@ h2{
 #orderChamps{
   margin-bottom: 50px;
 }
+#orderButton{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.frameImg{
+  width: 250px;
+  padding-bottom: 5px;
+}
 .skullImg{
-  width: 25px !important;
+  width: 20px !important;
+  position: relative;
+  float: left;
+  display: inline;
+  left: 70px;
 }
 #logoImg{
   width: 30%; 
   height: auto;
 }
-button {
+button {  
   display: inline-block;
   width: 150px; 
   padding: 0.8rem; 
@@ -64,7 +78,7 @@ button {
   letter-spacing: 2px;
   margin: 0;
   background: transparent;
-  color:#aee6ed;
+  color:#ffffff;  
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
