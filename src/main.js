@@ -51,13 +51,13 @@ document.querySelector("#assassinChampions").addEventListener("click", () => {
     showData(seeAssassinChampions(todaData));
     activeButton("assassinChampions");
     let totalChamps = seeAssassinChampions(todaData);
-    percentage(totalChamps);
+    document.getElementById("textPerc").innerText = `el ${percentage(totalChamps)}% de los campeones son `;
 });
 document.querySelector("#fighterChampions").addEventListener("click", () => {
     showData(seeFighterChampions(todaData));
     activeButton("fighterChampions");
     let totalChamps = seeFighterChampions(todaData);
-    percentage(totalChamps);
+    document.getElementById("textPerc").innerText = `el ${percentage(totalChamps)}% de los campeones son `;
 });
 
 document.querySelector("#mageChampions").addEventListener("click", () => {
@@ -65,34 +65,28 @@ document.querySelector("#mageChampions").addEventListener("click", () => {
     activeButton("mageChampions");
     let totalChamps = seeMageChampions(todaData);
     percentage(totalChamps);
+    document.getElementById("textPerc").innerText = `el ${percentage(totalChamps)}% de los campeones son `;
 });
 
 document.querySelector("#supChampions").addEventListener("click", () => {
     showData(seeSupChampions(todaData));
     activeButton("supChampions");
     let totalChamps = seeSupChampions(todaData);
-    percentage(totalChamps);
+    document.getElementById("textPerc").innerText = `el ${percentage(totalChamps)}% de los campeones son `;
 });
 
 document.querySelector("#tankChampions").addEventListener("click", () => {
     showData(seeTankchampions(todaData));
     activeButton("tankChampions");
     let totalChamps = seeTankchampions(todaData);
-    percentage(totalChamps);
+    document.getElementById("textPerc").innerText = `el ${percentage(totalChamps)}% de los campeones son `;
 });
 
 document.querySelector("#marksmanChampions").addEventListener("click", () => {
     showData(seeMarkchampions(todaData));
     activeButton("marksmanChampions");
     let totalChamps = seeMarkchampions(todaData);
-    percentage(totalChamps);
-    
-    
-
-    
-
-    /*return totalChamps.length*/
-
+    document.getElementById("textPerc").innerText = `el ${percentage(totalChamps)}% de los campeones son `;
 });
 document.querySelector("#orderDif").addEventListener("click", () => {
     showData(orderDifficulty(todaData));

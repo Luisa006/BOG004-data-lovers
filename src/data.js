@@ -34,6 +34,7 @@ export const percentage = (totalC) => {
   let calculate = totalC.length;
   let total = Math.floor((calculate * 100) / dataChamps.length);
   console.log(total);
+  
   return total
 }
 
