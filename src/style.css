@@ -15,7 +15,8 @@ body {
   font-family:"Baloo Chettan 2";
   src: url(BalooChettan2.ttf);
 }
-h1{
+
+/*h1{
   font-family: "beaufortforlol";
   color: #C4C4C4;  
   font-size: 20px;
@@ -43,7 +44,7 @@ h2{
   height: 100px;
   }
 #orderButton{
-  position: absolute;
+  /*position: absolute;
   right: 70px;
   top: 200px;
 }
@@ -62,7 +63,7 @@ h2{
   position: absolute;
   right: 0px;
   top: 0px;
-} */
+} 
 .frameImg{
   width: 250px;
   padding-bottom: 5px;
@@ -109,6 +110,8 @@ button:hover {
   color:#142021; 
 }
 #root{
+  display: flex;
+  flex-flow: row wrap;
   margin: auto;
   width: 80%;
   padding: 10px; 
@@ -116,6 +119,7 @@ button:hover {
 }
 .targetChampion{
   width: 25%;    
+  
   float: left;
   padding: 10px;  
 }
@@ -164,6 +168,8 @@ border-bottom: solid 2px rgb(167 137 68);
   }
 
 @media screen and (max-width: 1024px) {
+  /*@media screen and (min-width: 576px) and (max-width: 1024px){
+
   #orderButton{
     position: absolute;
     right: 30px;
@@ -176,19 +182,66 @@ border-bottom: solid 2px rgb(167 137 68);
     top: 100px;
     width: 30%;
     font-size: 15px;
+    }
+  .targetChampion{
+    width: 33.3%;    
+    float: left;
+    padding: 10px;  
   }
 }
 @media screen and (max-width: 767px) {
-  h2{
+  /*h2{
     width: 600px;
     border-radius: 15px;
   }
 }
 @media screen and (max-width: 600px) {
-  h2{
-    width: 600px;
-    border-radius: 15px;
-
-  }
+ .targetChampion{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 80vw;
 }
+
+}*/
+
+#logoImg{
+  width: 30%; 
+  height: auto;
+}
+
+#containerButton{
+  display: flex;
+  justify-content: space-between;
+}
+
+#tittle{
+  flex-grow: 3;
+}
+h1{
+  font-family: "beaufortforlol";
+  color: #C4C4C4;  
+  font-size: 20px;
+}
+p{
+  
+  font-family: "Baloo Chettan 2" !important;
+  color: #C4C4C4;  
+  font-size: 20px;
+  font-weight: 600;
+
+}
+#orderButton{  
+  display: flex;
+  flex-wrap: nowrap wrap wrap-reverse;
+  float: right;
+  right: 70px;
+  top: 10px;
+}
+#textPerc{
+  
+  width: 30%;
+  font-size: 15px;
+}
+
 
