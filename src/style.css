@@ -204,44 +204,296 @@ border-bottom: solid 2px rgb(167 137 68);
 }
 
 }*/
-
-#logoImg{
-  width: 30%; 
-  height: auto;
-}
-
-#containerButton{
-  display: flex;
-  justify-content: space-between;
-}
-
-#tittle{
-  flex-grow: 3;
-}
+/* GENERAL */
 h1{
   font-family: "beaufortforlol";
-  color: #C4C4C4;  
-  font-size: 20px;
+  color: #C4C4C4;
+}
+#tittleChampion{
+  font-family: "beaufortforlol";
+  color: #C4C4C4;
+  font-size: 30px;
+}
+#orderChamps button {
+  font-size: 12px;
+  padding: 10px; 
+  border: none;
+  border-top: solid 2px rgba(49, 228, 241, 0.466);
+  border-bottom: solid 2px rgba(49, 228, 241, 0.466);
+  font-family: "Baloo Chettan 2",;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0px;
+  background: transparent;
+  color:#ffffff;  
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  transition: all 150ms ease-in-out;
+}
+button:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  background-color: rgb(109, 217, 236) ;
+  color:#142021;
+}
+#orderDif{
+  font-family: "Baloo Chettan 2",;
+  border-radius: 0 50% 0 50% ;
+  border-top: solid 2px rgb(193 161 89 / 71%);
+  border-bottom: solid 2px rgb(167 137 68);
+  background-color: transparent;
+}
+#orderDif:hover {
+  box-shadow: 0 0 10px 0 #c6a75d inset, 0 0 10px 4px #c1a159;
+  background: linear-gradient(to right, #C6A75D, #967539, #C6A75D);
+}
+#orderNamebtn{
+  font-family: "Baloo Chettan 2",;
+  border-radius: 50% 0 50% 0;
+  border-top: solid 2px rgb(193 161 89 / 71%);
+  border-bottom: solid 2px rgb(167 137 68);
+  background-color: transparent;
+}
+#orderNamebtn:hover {
+  box-shadow: 0 0 10px 0 #c6a75d inset, 0 0 10px 4px #c1a159;
+  background: linear-gradient(to right, #C6A75D, #967539, #C6A75D);
+}
+#orderNamebtn, #orderDif, #textPerc{
+  font-family: "Baloo Chettan 2"; 
+  color: #C4C4C4;
+}
+#root{
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  text-align: center;
+}
+h2{
+  font-family: "beaufortforlol";
+  background: -webkit-linear-gradient(rgb(54, 171, 179), #C4C4C4);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;    
+  padding-bottom: 5px;   
+}
+#tittleChampion{
+  font-family: "beaufortforlol";
+  color: #C4C4C4;
+}
+.frameImg{
+  padding-bottom: 5px;
+}
+.targetChampion .championImg{
+  width: 100%;
+  border-style: inset;
+  border-color: rgba(49, 228, 241, 0.466);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+}
+.targetChampion .championImg:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  background-color: rgb(109, 217, 236) ;
+  color:#142021;
+}
+.skullImg{
+  position: relative;
+  float: left;
+  display: inline;
 }
 p{
-  
-  font-family: "Baloo Chettan 2" !important;
-  color: #C4C4C4;  
-  font-size: 20px;
+  font-family: "Baloo Chettan 2";
+  color: #C4C4C4;
   font-weight: 600;
-
-}
-#orderButton{  
-  display: flex;
-  flex-wrap: nowrap wrap wrap-reverse;
-  float: right;
-  right: 70px;
-  top: 10px;
-}
-#textPerc{
-  
-  width: 30%;
-  font-size: 15px;
 }
 
 
+/* Escritorio extra grande */
+@media only screen and (min-width: 992px){
+  #logoImg{
+    width: 30%; 
+    height: auto;
+  }
+  #tittle{
+    flex-grow: 1;
+  }
+  h1{
+    font-size: 20px;
+  }
+  #titleChampion{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  #containerButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+    padding-top: 20px;
+  }
+  #orderChamps button {
+    width: 150px;
+    font-size: 12px;
+  }
+  #orderButton{  
+    float: left;
+  }
+  #orderNamebtn, #orderDif{
+    width: 150px;
+    font-size: 12px;
+  }
+  #textPerc{
+    flex-grow: 1;
+    width: 10vw;
+    font-size: 15px;
+  }
+  #root{
+    width: 80%;
+    padding: 10px;
+  } 
+  .targetChampion{
+    width: 25%;    
+    float: left;
+    padding: 10px;  
+  }
+  .frameImg{
+    width: 250px;
+  }
+  .targetChampion .championImg{
+    border-radius: 28px;
+  }
+  .skullImg{
+    width: 20px;
+    left: 70px;
+  }
+  p{
+    font-size: 20px
+  }
+}
+/*TABLETS*/
+@media only screen and (min-width: 576px) and (max-width: 992px){
+  #logoImg{
+    width: 50%; 
+    height: auto;
+  }
+  #tittle{
+    flex-grow: 1;
+  }
+  h1{
+    font-family: "beaufortforlol";
+    color: #C4C4C4;  
+    font-size: 15px;
+  }
+  #textPerc{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 10px 10px 0px;
+  }
+  #orderChamps{
+    margin: 10px;
+  }
+  #orderChamps button {
+    width: 130px;
+    font-size: 12px;
+    margin: 3px 5px 3px 5px;
+  }
+  #containerButton{
+    display: inline;
+  }
+  #orderNamebtn, #orderDif{
+    width: 130px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  #root{
+    width: 96vw;
+    /* padding: 10px; */
+    /* margin: 0; */
+  }
+  h2{
+    font-size: 26px;  
+  }
+  .targetChampion{
+    width: 33%;
+    padding: 5px 5px 20px 5px;    
+
+    /* width: 30%; */
+    /* margin: auto; */
+    /* padding: 5px 5px 20px 5px;     */
+    /* float: left; */
+    /* padding: 5px; */
+  }
+  .frameImg{
+    width: 230px;
+  }
+  .targetChampion .championImg{
+    border-radius: 15px;
+  }
+  .skullImg{
+    width: 15px;
+    left: 30px;
+  }
+  p{ 
+    font-size: 15px;
+    margin: 0px 10px 10px 0px;
+  }
+}
+/* TELÉFONOS */
+@media only screen and (max-width: 575px){
+  #logoImg{
+    width: 50%; 
+    height: auto;
+  }
+  #tittle{
+    flex-grow: 1;
+  }
+  h1{
+    font-family: "beaufortforlol";
+    color: #C4C4C4;  
+    font-size: 15px;
+  }
+  #textPerc{
+    font-size: 12px;
+    font-weight: 500;
+  }
+  #orderChamps{
+    margin: 20px;
+  }
+  #orderChamps button {
+    width: 120px;
+    font-size: 10px;
+    margin: 3px 10px 3px 10px;
+  }
+  #containerButton{
+    display: inline;
+  }
+  #orderNamebtn, #orderDif{
+    width: 100px;
+    font-size: 10px;
+  }
+  #root{
+    width: 100vw;
+    /* padding: 10px; */
+  }
+  h2{
+    font-size: 20px;  
+  }
+  .targetChampion{
+    width: 48%;
+    padding: 5px 5px 20px 5px;    
+    /* float: left; */
+    /* padding: 5px; */
+  }
+  .frameImg{
+    width: 150px;
+  }
+  .targetChampion .championImg{
+    border-radius: 15px;
+  }
+  .skullImg{
+    width: 15px;
+    left: 30px;
+  }
+  p{ 
+    font-size: 15px;
+  }
+}
