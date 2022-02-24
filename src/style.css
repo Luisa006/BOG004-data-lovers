@@ -42,21 +42,27 @@ h2{
 #orderButton, #orderChamps {
   height: 100px;
   }
-
-  #orderButton{
-    position: absolute;
-    right: 70px;
-    top: 200px;
-  }
+#orderButton{
+  position: absolute;
+  right: 70px;
+  top: 200px;
+}
+#textPerc{
+  position: absolute;
+  left: 70px;
+  top: 200px;
+  width: 30%;
+  font-size: 15px;
+}
   
 #orderChamps{
   margin-bottom: 50px;  
 }
-#orderButton{
+/* #orderButton{
   position: absolute;
   right: 0px;
   top: 0px;
-}
+} */
 .frameImg{
   width: 250px;
   padding-bottom: 5px;
