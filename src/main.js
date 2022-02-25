@@ -1,9 +1,6 @@
 import data from './data/lol/lol.js';
 import { seeAssassinChampions, seeFighterChampions, seeMageChampions, seeSupChampions, seeTankchampions, seeMarkchampions, orderDifficulty, orderName, percentage, } from './data.js';
 const todaData = Object.values(data.data);
-const nameData = Object.keys(data.data); //array con los nombres
-console.log(nameData);
-console.log(todaData);
 const showData = (array) => {
     document.getElementById("root").innerHTML = "";
     array.forEach((champion) => {

@@ -1,6 +1,3 @@
-// export const example = () => {
-//   return 'example';
-// };
 import data from './data/lol/lol.js';
 
 export const seeAssassinChampions = (todaData) => {
@@ -32,9 +29,7 @@ export const seeMarkchampions = (todaData) => {
 const dataChamps = Object.values(data.data);
 export const percentage = (totalC) => {
   let calculate = totalC.length;
-  let total = Math.floor((calculate * 100) / dataChamps.length);
-  console.log(total);
-  
+  let total = Math.round((calculate * 100) / dataChamps.length);
   return total
 }
 

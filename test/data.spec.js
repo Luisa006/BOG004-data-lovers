@@ -1,5 +1,5 @@
 import { describe, it } from 'eslint/lib/rule-tester/rule-tester';
-import { seeAssassinChampions, seeFighterChampions, seeMageChampions, seeSupChampions, seeTankchampions, seeMarkchampions, orderDifficulty, orderName } from '../src/data.js';
+import { seeAssassinChampions, seeFighterChampions, seeMageChampions, seeSupChampions, seeTankchampions, seeMarkchampions, orderDifficulty, orderName, percentage } from '../src/data.js';
 
 const testDate = [
   {
@@ -509,4 +509,15 @@ describe('orderName', () => {
     const lastPosition = orderData.length-1; 
     expect(orderData[lastPosition].name).toEqual("Ashe");
   })  
+});
+describe('percentage', () => {
+  it('is a function', () => {
+    expect(typeof percentage).toBe('function');
+  });
+  it('retuns `calcula el porcentaje de asesinos del ejemplo en función del total real de los campeones`', () => {
+    expect(percentage(assassinFilter)).toEqual(1);
+  });
+  it('retuns `calcula el porcentaje de tiradores del ejemplo en función del total real de los campeones`', () => {
+    expect(percentage(marksFilter)).toEqual(1);
+  })
 });

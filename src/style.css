@@ -1,3 +1,11 @@
+@font-face {
+  font-family:"beaufortforlol";
+  src: url(Beaufort.ttf);
+}
+@font-face {
+  font-family:"Baloo Chettan 2";
+  src: url(BalooChettan2.ttf);
+}
 *{
   margin: 0;
   padding: 0;
@@ -7,203 +15,7 @@ body {
   background: radial-gradient(#080E18, #0e2433, #080E18);
   text-align: center;
 }
-@font-face {
-  font-family:"beaufortforlol";
-  src: url(Beaufort.ttf);
-}
-@font-face {
-  font-family:"Baloo Chettan 2";
-  src: url(BalooChettan2.ttf);
-}
 
-/*h1{
-  font-family: "beaufortforlol";
-  color: #C4C4C4;  
-  font-size: 20px;
-}
-p{
-  font-family: "Baloo Chettan 2" !important;
-  color: #C4C4C4;  
-  font-size: 20px;
-  font-weight: 600;
-}
-h2{
-  font-family: "beaufortforlol";
-  font-size: 30px;  
-  background: -webkit-linear-gradient(rgb(54, 171, 179), #C4C4C4);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;    
-  padding-bottom: 5px;   
-}
-#tittleChampion{
-  font-family: "beaufortforlol";
-  color: #C4C4C4;
-  font-size: 35px;
-}
-#orderButton, #orderChamps {
-  height: 100px;
-  }
-#orderButton{
-  /*position: absolute;
-  right: 70px;
-  top: 200px;
-}
-#textPerc{
-  position: absolute;
-  left: 70px;
-  top: 200px;
-  width: 30%;
-  font-size: 15px;
-}
-  
-#orderChamps{
-  margin-bottom: 50px;  
-}
-/* #orderButton{
-  position: absolute;
-  right: 0px;
-  top: 0px;
-} 
-.frameImg{
-  width: 250px;
-  padding-bottom: 5px;
-}
-.skullImg{
-  width: 20px !important;
-  position: relative;
-  float: left;
-  display: inline;
-  left: 70px;
-}
-#logoImg{
-  width: 30%; 
-  height: auto;
-}
-button {  
-  display: inline-block;
-  width: 150px; 
-  padding: 0.8rem; 
-  border: none;
-  border-top: solid 2px rgba(49, 228, 241, 0.466);
-  border-bottom: solid 2px rgba(49, 228, 241, 0.466);
-  font-size: 15px;
-  font-family: "Baloo Chettan 2",;
-  font-weight: 500;
-  letter-spacing: 2px;
-  margin: 0;
-  background: transparent;
-  color:#ffffff;  
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  margin: 50px auto;
-  transition: all 150ms ease-in-out;
-}
-button:hover {
-  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-  background-color: rgb(109, 217, 236) ;
-  color:#142021;
-}
-.active {
-  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-  background-color: rgb(109, 217, 236) ;
-  color:#142021; 
-}
-#root{
-  display: flex;
-  flex-flow: row wrap;
-  margin: auto;
-  width: 80%;
-  padding: 10px; 
-  text-align: center;
-}
-.targetChampion{
-  width: 25%;    
-  
-  float: left;
-  padding: 10px;  
-}
-.targetChampion .championImg{
-  width: 100%;
-  border-style: inset;
-  border-color: rgba(49, 228, 241, 0.466);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-}
-.targetChampion .championImg:hover {
-  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
-  background-color: rgb(109, 217, 236) ;
-  color:#142021;
-}
-
-#orderDif{
- 
-width: 200px;
-font-size: 16px;
-font-family: "Baloo Chettan 2",;
-border-radius: 0 50% 0 50% ;
-border-top: solid 2px rgb(193 161 89 / 71%);
-border-bottom: solid 2px rgb(167 137 68);
-}
-#orderDif:hover {
-  box-shadow: 0 0 10px 0 #c6a75d inset, 0 0 10px 4px #c1a159;
-  background: linear-gradient(to right, #C6A75D, #967539, #C6A75D);
-}
-
-#orderNamebtn{
- 
-  width: 200px;
-  font-size: 16px;
-  font-family: "Baloo Chettan 2",;
-  border-radius: 50% 0 50% 0;
-  border-top: solid 2px rgb(193 161 89 / 71%);
-  border-bottom: solid 2px rgb(167 137 68);
-
-  }
-  #orderNamebtn:hover {
-    box-shadow: 0 0 10px 0 #c6a75d inset, 0 0 10px 4px #c1a159;
-    background: linear-gradient(to right, #C6A75D, #967539, #C6A75D);
-    
-  }
-
-@media screen and (max-width: 1024px) {
-  /*@media screen and (min-width: 576px) and (max-width: 1024px){
-
-  #orderButton{
-    position: absolute;
-    right: 30px;
-    top: 130px;
-       
-  }
-  #textPerc{
-    position: absolute;
-    left: 30px;
-    top: 100px;
-    width: 30%;
-    font-size: 15px;
-    }
-  .targetChampion{
-    width: 33.3%;    
-    float: left;
-    padding: 10px;  
-  }
-}
-@media screen and (max-width: 767px) {
-  /*h2{
-    width: 600px;
-    border-radius: 15px;
-  }
-}
-@media screen and (max-width: 600px) {
- .targetChampion{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   width: 80vw;
-}
-
-}*/
 /* GENERAL */
 h1{
   font-family: "beaufortforlol";
@@ -305,7 +117,6 @@ p{
   font-weight: 600;
 }
 
-
 /* Escritorio extra grande */
 @media only screen and (min-width: 992px){
   #logoImg{
@@ -369,6 +180,7 @@ p{
     font-size: 20px
   }
 }
+
 /*TABLETS*/
 @media only screen and (min-width: 576px) and (max-width: 992px){
   #logoImg{
@@ -406,21 +218,13 @@ p{
   }
   #root{
     width: 96vw;
-    /* padding: 10px; */
-    /* margin: 0; */
   }
   h2{
     font-size: 26px;  
   }
   .targetChampion{
     width: 33%;
-    padding: 5px 5px 20px 5px;    
-
-    /* width: 30%; */
-    /* margin: auto; */
-    /* padding: 5px 5px 20px 5px;     */
-    /* float: left; */
-    /* padding: 5px; */
+    padding: 5px 5px 20px 5px;
   }
   .frameImg{
     width: 230px;
@@ -437,6 +241,7 @@ p{
     margin: 0px 10px 10px 0px;
   }
 }
+
 /* TELÉFONOS */
 @media only screen and (max-width: 575px){
   #logoImg{
@@ -472,16 +277,13 @@ p{
   }
   #root{
     width: 100vw;
-    /* padding: 10px; */
   }
   h2{
     font-size: 20px;  
   }
   .targetChampion{
     width: 48%;
-    padding: 5px 5px 20px 5px;    
-    /* float: left; */
-    /* padding: 5px; */
+    padding: 5px 5px 20px 5px;
   }
   .frameImg{
     width: 150px;
