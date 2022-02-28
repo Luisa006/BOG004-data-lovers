@@ -125,6 +125,7 @@ p{
   }
   #tittle{
     flex-grow: 1;
+    padding-bottom: 5px;
   }
   h1{
     font-size: 20px;
@@ -132,6 +133,7 @@ p{
   #titleChampion{
     font-size: 20px;
     font-weight: 600;
+    
   }
   #containerButton{
     display: flex;
@@ -150,7 +152,8 @@ p{
   }
   #orderNamebtn, #orderDif{
     width: 150px;
-    font-size: 12px;
+    font-size: 15px;
+    font-weight: 600;
   }
   #textPerc{
     flex-grow: 1;
