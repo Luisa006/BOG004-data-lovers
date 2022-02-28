@@ -19,18 +19,21 @@
 En este proyecto se realizó una página inspirada en el juego League of Legends, donde el usuario podrá ver los campeones con su respectivo nombre, imagen, nivel de dificultad y rol, de una manera ordenada mediante filtros fáciles de entender e intuitivos.
 Es totalmente responsive, donde el usuario podrá visualizarlo tanto en una laptop, tablet o dispositivos móviles. 
 
-![IMAGEN DEL PROTOTIPO RESPONSIVE]()
+![IMAGEN DEL PROTOTIPO RESPONSIVE](https://raw.githubusercontent.com/Luisa006/BOG004-data-lovers/main/interfaz-responsive.png)
 
 ### 1.1 Historias de usuario
 Se realizó un estudio previo con usuarios reales del juego para saber cuales eran sus intereses o necesidades a la hora de consultar por los campeones pertenecientes al juego. Con base a ello se establecieron 3 historias de usuario:
   1.Yo como interesado en jugar lol quiero ver todos los campeones y los roles a los que pertenecen para poder elegir la línea del mapa en la que quiero empezar a jugar.
   2.Yo como jugador quisiera tener una idea visual del campeón para poder elegir el que me llame la atención (imagen del campeón).
   3.Yo como jugador de lol quisiera ver la dificultad de juego de los campeones para que al comprar o querer jugar un nuevo champ saber si me tomará más tiempo de practica.
+  4.Yo como jugador de lol quisiera una página en fondo oscuro porque la página oficial de Lol es de fondo claro y siento que así es más agotador para la vista.
 
 
 ## 2. Diseño de prototipo
-
-
+El proceso de diseño se realizó considerando las historias de usuario y el estudio previo de los usuarios, se realizó
+contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
+el problema (o problemas) que tiene tu usuario.
+![IMAGEN DEL PROTOTIPO DE BAJA FIDELIDAD](https://raw.githubusercontent.com/Luisa006/BOG004-data-lovers/main/prototipo-dibujo.jpeg)
 
 ## 3. Objetivos de aprendizaje
 
@@ -41,11 +44,7 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 Los criterios para considerar que has completado este proyecto son:
 
-### Definición del producto
 
-Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
-contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
 
 ### Historias de usuario
 
